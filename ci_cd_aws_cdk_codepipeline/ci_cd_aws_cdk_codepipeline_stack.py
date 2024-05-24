@@ -24,7 +24,7 @@ class CiCdAwsCdkCodepipelineStack(Stack):
         # The code that defines your stack goes here
         git_input = pipelines.CodePipelineSource.connection(
             repo_string="Bernado6/CI-CD-AWS-CDK-Codepipeline",
-            branch = "main",
+            branch = "master",
             connection_arn="arn:aws:codestar-connections:us-west-2:102513652042:connection/dd9697f3-116f-44b5-aa8b-6c5f691b46cd"
         )
 
